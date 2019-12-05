@@ -61,7 +61,7 @@ void loop() {
     else if (val == 43) {
       lcd.print("+");
       op = "+";
-      while (val2 != 48) {
+      while (val2 != 61) {
         val2 = Serial.read();
         delay(300);
         if (val2 == 49) {
@@ -105,7 +105,7 @@ void loop() {
     else if (val == 45) {
       lcd.print("-");
       op = "-";
-      while (val2 != 48) {
+      while (val2 != 61) {
         val2 = Serial.read();
         delay(300);
         if (val2 == 49) {
@@ -149,7 +149,7 @@ void loop() {
     else if (val == 47) {
       lcd.print("/");
       op = "/";
-      while (val2 != 48) {
+      while (val2 != 61) {
         val2 = Serial.read();
         delay(300);
         if (val2 == 49) {
@@ -193,7 +193,7 @@ void loop() {
     else if (val == 42) {
       lcd.print("*");
       op = "*";
-      while (val2 != 48) {
+      while (val2 != 61) {
         val2 = Serial.read();
         delay(300);
         if (val2 == 49) {
