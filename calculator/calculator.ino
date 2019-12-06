@@ -255,6 +255,6 @@ void loop() {
       Serial.println(tot);
       delay(2000);
     }
-    Serial.println(val);
+    //Serial.println(val);
 
 }
