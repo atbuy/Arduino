@@ -2,8 +2,6 @@
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-const int pinLed = 13;
-
 void setup() {
   Serial.begin(9600);
   lcd.begin();
