@@ -21,25 +21,24 @@ void setup() {
 
 void loop() {
   GO();
-  runFor(3);
+  delay(2000);
   STOP();
-  runFor(0.5);
-  RIGHT();
-  runFor(1);
+  delay(500);
+  fastRight();
+  delay(750);
   STOP();
-  runFor(0.5);
+  delay(500);
   REVERSE();
-  runFor(3);
+  delay(2000);
   STOP();
-  runFor(0.5);
-  LEFT();
-  runFor(1);
+  delay(500);
+  fastLeft();
+  delay(750);
   STOP();
-  runFor(0.5);
+  delay(500);
 }
-void runFor(int x) {
-  delay(x * 1000);
-}
+
+
 void GO() {
   motor1.run(FORWARD);
   delay(100);
@@ -60,24 +59,7 @@ void STOP() {
   motor4.run(RELEASE);
   delay(1000);
 }
-void RIGHT() {
-  motor1.run(RELEASE);
-  motor2.run(RELEASE);
-  motor3.run(FORWARD);
-  motor4.run(RELEASE);
-  delay(1000);
-}
-void LEFT() {
-  motor1.run(RELEASE);
-  delay(100);
-  motor2.run(RELEASE);
-  delay(100);
-  motor3.run(RELEASE);
-  delay(100);
-  motor4.run(FORWARD);
-  delay(100);
-}
-void fastLeft() {
+void fastRight() {
   motor1.run(RELEASE);
   delay(100);
   motor2.run(FORWARD);
@@ -87,7 +69,7 @@ void fastLeft() {
   motor4.run(RELEASE);
   delay(100);
 }
-void fastRight() {
+void fastLeft() {
   motor1.run(FORWARD);
   delay(100);
   motor2.run(RELEASE);
