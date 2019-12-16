@@ -117,15 +117,7 @@ String readSerial() {
     return reply;
   }
 }
-void writeSerialToBLE(int value) {
-  mySerial.println(value);
-}
 
-void writeToBLE(char value) {
-  Serial.print("Writing hex: ");
-  Serial.println(value, HEX);
-  mySerial.write(value);
-}
 String ble_val;
 
 void loop() {
