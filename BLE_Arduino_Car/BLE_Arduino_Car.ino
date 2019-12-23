@@ -36,7 +36,7 @@ void GO() {
   delay(100);
   motor3.run(FORWARD);
   delay(100);
-  motor2.run(FORWARD);
+  motor2.run(BACKWARD);
   delay(100);
   motor4.run(FORWARD);
   delay(1000);
@@ -56,7 +56,7 @@ void STOP() {
 void fastRight() {
   motor1.run(RELEASE);
   delay(100);
-  motor2.run(FORWARD);
+  motor2.run(BACKWARD);
   delay(100);
   motor3.run(FORWARD);
   delay(100);
@@ -79,7 +79,7 @@ void REVERSE() {
   delay(100);
   motor3.run(BACKWARD);
   delay(100);
-  motor2.run(BACKWARD);
+  motor2.run(FORWARD);
   delay(100);
   motor4.run(BACKWARD);
   delay(1000);
